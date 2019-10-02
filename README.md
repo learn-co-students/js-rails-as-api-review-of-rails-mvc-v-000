@@ -11,6 +11,9 @@ models, views and controllers. As we have seen, Rails can entirely handle the
 front and backend of a website - one reason it is a great tool for web
 development.
 
+
+
+
 With Rails, though, we aren't required to strictly render ERB views. In this
 code-along, we're going to briefly review the MVC structure of Rails as well as
 rendering through the Rails controller. The basic files of a Rails app are 
