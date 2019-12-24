@@ -13,8 +13,8 @@ development.
 
 With Rails, though, we aren't required to strictly render ERB views. In this
 code-along, we're going to briefly review the MVC structure of Rails as well as
-rendering through the Rails controller. The basic files of a Rails app are 
-provided in this lesson, but some files will need content from this Readme to 
+rendering through the Rails controller. The basic files of a Rails app are
+provided in this lesson, but some files will need content from this Readme to
 function.
 
 ## Review of MVC Structure
@@ -32,11 +32,11 @@ of files have specific jobs and interact with each other in very defined ways:
   browser.
 
 To review the model, view, controller structure in Rails, we're going to quickly
-walk through the setting up a basic resource. 
+walk through the setting up a basic resource.
 
-Let's imagine we want to build an amateur bird watching website. To start, we'll 
-just try to create a site that displays different types of birds. Using Rails and 
-this MVC pattern, the data about these birds would be contained within a database, 
+Let's imagine we want to build an amateur bird watching website. To start, we'll
+just try to create a site that displays different types of birds. Using Rails and
+this MVC pattern, the data about these birds would be contained within a database,
 so let's set that up.
 
 First, we need a migration to set up the database:
@@ -103,7 +103,7 @@ set up to work together.
 Rails favors convention over configuration. For this reason, if a **_folder_**
 and **_file_** are present in the **_views_** folder that correspond to a
 **_controller_** and **_action_** listed on a **_route_**, Rails will display
-that **_view_** by default. 
+that **_view_** by default.
 
 In our example, we have a route pointed to `'birds#index'`. In `app/views`, we
 _also_ have a `/birds` folder containing `index.html.erb`. Rails recognizes this
@@ -133,14 +133,14 @@ bird's name and species in an unordered list:
 
 ## Conclusion
 
-As it is currently configured, we already have a Rails app up and running using 
-the MVC structure! If you run `rails server` and visit the `'/birds'` path, you 
+As it is currently configured, we already have a Rails app up and running using
+the MVC structure! If you run `rails server` and visit the `'/birds'` path, you
 should see a list of birds.
 
 With minimal work, as we just saw, we were able to spin up a resource backed by
 a database and serve it up in a browser. In short, when a visitor goes to
 `'/birds'` on this Rails app, the controller retrieves data from the `Bird`
-model and then serves that data to the visitor by displaying it in a view. 
+model and then serves that data to the visitor by displaying it in a view.
 
 So where does JavaScript fit in? Well, we have the skills to build out our own
 frontends. As we will see in the next lesson, rather than using the ERB view,
