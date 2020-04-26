@@ -1,1 +1,8 @@
-# Add code from Readme
+class BirdsController < ApplicationController
+
+  def index
+    @birds = Birds.all
+    render 'birds/index.html.erb'
+  end
+
+end
